@@ -68,5 +68,9 @@ RUN yum install -y \
   libndp-devel \
   epel-release \
   nodejs \
-  npm
+  npm \
+  nspr-devel \
+  python-devel \
+  nasm \
+  pixman-devel
 
