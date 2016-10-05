@@ -2,7 +2,7 @@ FROM vcatechnology/centos-ci:latest
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
 # Install useful packages
-RUN yum install -y \
+RUN sudo yum install -y \
   gcc \
   gcc-c++ \
   libtool \
@@ -74,3 +74,6 @@ RUN yum install -y \
   nasm \
   pixman-devel
 
+RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
+
+RUN sudo pip install pystache requests pytz
