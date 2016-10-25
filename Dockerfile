@@ -83,8 +83,10 @@ RUN sudo yum --enablerepo=extras install -y\
   libuv-devel\
   nodejs\
   eigen3-devel\
-  pam-devel
+  pam-devel\
+  python-requests\
+  pytz
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
 
-RUN sudo pip install pystache requests pytz
+RUN sudo pip install pystache
