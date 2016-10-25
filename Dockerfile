@@ -72,7 +72,15 @@ RUN sudo yum install -y \
   nspr-devel \
   python-devel \
   nasm \
-  pixman-devel
+  pixman-devel \
+  p7zip \
+  cppcheck \
+  pandoc \
+  yasm \
+  tinyxml-devel \
+  gstreamer1-rtsp-server-devel \
+  libuv-devel \
+  nodejs
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
 
