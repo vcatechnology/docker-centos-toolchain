@@ -81,7 +81,9 @@ RUN sudo yum --enablerepo=extras install -y\
   tinyxml-devel\
   gstreamer1-rtsp-server-devel\
   libuv-devel\
-  nodejs
+  nodejs\
+  eigen3-devel\
+  pam-devel
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
 
