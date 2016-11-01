@@ -89,4 +89,4 @@ RUN sudo yum --enablerepo=extras install -y\
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
 
-RUN sudo pip install pystache
+RUN sudo pip install pystache cpplint
