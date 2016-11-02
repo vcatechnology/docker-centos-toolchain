@@ -86,7 +86,9 @@ RUN sudo yum --enablerepo=extras install -y\
   pam-devel\
   python-requests\
   pytz \
-  bzip2-devel
+  bzip2-devel \
+  flex \
+  bison
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
   sudo python get-pip.py && \
