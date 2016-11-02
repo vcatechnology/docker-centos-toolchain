@@ -88,6 +88,8 @@ RUN sudo yum --enablerepo=extras install -y\
   pytz \
   bzip2-devel
 
-RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
+RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
+  sudo python get-pip.py && \
+  rm get-pip.py
 
 RUN sudo pip install pystache cpplint
