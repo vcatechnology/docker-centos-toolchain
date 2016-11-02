@@ -85,7 +85,8 @@ RUN sudo yum --enablerepo=extras install -y\
   eigen3-devel\
   pam-devel\
   python-requests\
-  pytz
+  pytz \
+  bzip2-devel
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && sudo python get-pip.py
 
