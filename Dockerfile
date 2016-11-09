@@ -90,6 +90,7 @@ RUN sudo yum --enablerepo=extras install -y\
   flex \
   bison \
   llvm \
+  llvm-devel \
   clang
 
 RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
