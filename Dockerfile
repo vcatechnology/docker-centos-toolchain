@@ -92,7 +92,7 @@ RUN sudo vca-install-package \
   llvm-devel \
   clang
 
-RUN sudo curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
+RUN sudo curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
   sudo python get-pip.py && \
   sudo rm get-pip.py
 
