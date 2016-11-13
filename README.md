@@ -1,9 +1,11 @@
-# CentOS Docker CI Image
+# CentOS Docker Tool Chain Image
 
-This container derives from an updated base [CentOS](https://hub.docker.com/r/vcatechnology/centos/) container
-Additional packages, useful to development are added
+[![](https://images.microbadger.com/badges/image/vcatechnology/centos-toolchain.svg)](http://microbadger.com/images/vcatechnology/centos-toolchain "Image Layers") [![](https://images.microbadger.com/badges/version/vcatechnology/centos.svg)](http://microbadger.com/images/vcatechnology/centos-toolchain "Image Version") [![](https://images.microbadger.com/badges/license/vcatechnology/centos-toolchain.svg)](https://microbadger.com/images/vcatechnology/centos-toolchain "Image License")  [![](https://images.microbadger.com/badges/commit/vcatechnology/centos-toolchain.svg)](https://github.com/vcatechnology/docker-centos-toolchain "Image Commit")
 
-## Packages
-  - [`python`](https://www.archlinux.org/packages/extra/x86_64/python/)
-  - [`git`](https://www.archlinux.org/packages/extra/x86_64/git/)
-  - [`sudo`](https://www.archlinux.org/packages/core/x86_64/sudo/)
+This container derives from
+[vcatechnology/centos-ci](https://hub.docker.com/r/vcatechnology/centos-ci) so that the
+image has the latest [CentOS](https://www.centos.org/) packages. It then
+installs the some useful packages for building projects with the
+[VCA Tool Chain](https://gitlab.vcatechnology.com/tool-chain/tool-chain).
+
+Available on Docker Hub as [vcatechnology/centos-toolchain](https://hub.docker.com/r/vcatechnology/centos-toolchain/)
