@@ -1,9 +1,6 @@
 FROM vcatechnology/centos-ci
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
-# Echo the path
-RUN echo "PATH=${PATH}"
-
 # Build-time metadata as defined at http://label-schema.org
 ARG PROJECT_NAME
 ARG BUILD_DATE
