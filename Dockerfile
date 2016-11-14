@@ -1,4 +1,4 @@
-FROM vcatechnology/centos-ci:latest
+FROM vcatechnology/centos-ci
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
 # Echo the path
