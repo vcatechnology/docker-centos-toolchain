@@ -112,4 +112,4 @@ RUN sudo curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
   sudo python get-pip.py && \
   sudo rm get-pip.py
 
-RUN sudo pip install pystache cpplint
+RUN pip install --user pystache cpplint sseclient
