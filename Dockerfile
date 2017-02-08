@@ -106,10 +106,11 @@ RUN sudo vca-install-package \
   bison \
   llvm \
   llvm-devel \
-  clang
+  clang \
+  python-coverage
 
 RUN sudo curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
   sudo python get-pip.py && \
   sudo rm get-pip.py
 
-RUN pip install --user pystache cpplint sseclient
+RUN pip install --user pystache cpplint sseclient backports.functools_lru_cache
