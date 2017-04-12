@@ -107,7 +107,21 @@ RUN sudo vca-install-package \
   llvm \
   llvm-devel \
   clang \
-  python-coverage
+  python-coverage \
+  libcap-ng-devel \
+  qemu \
+  aalib-devel \
+  bc \
+  icu \
+  gperf \
+  gnu-efi-devel \
+  uuidd \
+  mpfr-devel \
+  mpc-devel \
+  libpciaccess-devel \
+  subunit-filters \
+  subunit-devel \
+  libusbx-devel
 
 RUN sudo curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
   sudo python get-pip.py && \
