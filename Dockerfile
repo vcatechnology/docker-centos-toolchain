@@ -123,8 +123,8 @@ RUN sudo vca-install-package \
   subunit-devel \
   libusbx-devel
 
-RUN sudo curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" && \
-  sudo python get-pip.py && \
-  sudo rm get-pip.py
+RUN curl -sO https://bootstrap.pypa.io/get-pip.py \
+ && sudo python get-pip.py \
+ && rm get-pip.py
 
 RUN pip install --user pystache cpplint sseclient backports.functools_lru_cache
