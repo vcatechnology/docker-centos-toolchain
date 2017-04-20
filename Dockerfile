@@ -19,6 +19,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Install useful packages
 RUN sudo vca-install-package \
+  aalib \
   aalib-devel \
   alsa-lib-devel \
   alsa-utils \
@@ -39,6 +40,7 @@ RUN sudo vca-install-package \
   flex \
   gcc \
   gcc-c++ \
+  gdisk \
   gettext-devel \
   glib2-devel \
   gmp-devel \
@@ -46,6 +48,7 @@ RUN sudo vca-install-package \
   gnutls-devel \
   gperf \
   graphviz \
+  gsoap-devel \
   gstreamer1-devel \
   gstreamer1-plugins-base-devel \
   gstreamer1-plugins-good \
@@ -67,6 +70,7 @@ RUN sudo vca-install-package \
   libitm-devel \
   libjpeg-turbo-devel \
   libmount-devel \
+  libmpc-devel \
   libndp-devel \
   libnl-devel \
   libntlm-devel \
@@ -112,6 +116,7 @@ RUN sudo vca-install-package \
   rpm-build \
   rpmlint \
   sqlite-devel \
+  stress \
   subunit-devel \
   subunit-filters \
   systemd-devel \
