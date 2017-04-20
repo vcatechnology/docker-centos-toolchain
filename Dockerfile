@@ -19,109 +19,109 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Install useful packages
 RUN sudo vca-install-package \
+  aalib-devel \
+  alsa-lib-devel \
+  alsa-utils \
+  bc \
+  bison \
+  boost-devel \
+  bzip2-devel \
+  check-devel \
+  clang \
+  cmake \
+  cppcheck \
+  cppunit-devel \
+  dbus-devel \
+  dialog-devel \
+  doxygen \
+  eigen3-devel \
+  epel-release \
+  flex \
   gcc \
   gcc-c++ \
-  libtool \
-  make \
-  rpm-build \
-  rpmlint \
-  libitm-devel \
-  doxygen \
-  graphviz \
-  check-devel \
-  valgrind \
-  cppunit-devel \
-  pcre-devel \
-  zlib-devel \
-  protobuf-devel \
-  qt-devel \
-  cmake \
-  libpng-devel \
-  libjpeg-turbo-devel \
-  opencv-devel \
-  libicu-devel \
-  boost-devel \
-  jansson-devel \
-  openssl-devel \
-  libntlm-devel \
-  libffi-devel \
-  xz-devel \
-  libxml2-devel \
   gettext-devel \
   glib2-devel \
-  sqlite-devel \
-  intltool \
-  libsoup-devel \
   gmp-devel \
-  nettle-devel \
-  orc-compiler \
-  orc-devel \
+  gnu-efi-devel \
+  gnutls-devel \
+  gperf \
+  graphviz \
   gstreamer1-devel \
   gstreamer1-plugins-base-devel \
   gstreamer1-plugins-good \
-  libsigc++20-devel \
-  libidn-devel \
-  gnutls-devel \
-  libcurl-devel \
+  gstreamer1-rtsp-server-devel \
+  icu \
+  intltool \
+  jansson-devel \
   libattr-devel \
-  libcap-devel \
-  libuuid-devel \
   libblkid-devel \
-  libmount-devel \
-  sysvinit-tools \
-  systemd-devel \
+  libcap-devel \
+  libcap-ng-devel \
+  libcurl-devel \
+  libffi-devel \
+  libgcrypt-devel \
+  libgpg-error-devel \
   libgudev1-devel \
-  dbus-devel \
+  libicu-devel \
+  libidn-devel \
+  libitm-devel \
+  libjpeg-turbo-devel \
+  libmount-devel \
+  libndp-devel \
+  libnl-devel \
+  libntlm-devel \
+  libpciaccess-devel \
+  libpng-devel \
+  libsigc++20-devel \
+  libsoup-devel \
+  libtool \
+  libusbx-devel \
+  libuuid-devel \
+  libuv-devel \
+  libxml2-devel \
+  llvm \
+  llvm-devel \
+  make \
+  mpc-devel \
+  mpfr-devel \
+  nasm \
   ncurses-devel \
   ncurses-term \
-  dialog-devel \
-  popt-devel \
-  libgpg-error-devel \
-  libgcrypt-devel \
-  alsa-lib-devel \
-  alsa-utils \
-  libnl-devel \
-  libndp-devel \
-  epel-release \
+  nettle-devel \
+  nodejs \
   nodejs \
   npm \
   nspr-devel \
-  python-devel \
-  nasm \
-  pixman-devel \
+  opencv-devel \
+  openssl-devel \
+  orc-compiler \
+  orc-devel \
   p7zip \
-  cppcheck \
-  pandoc \
-  yasm \
-  tinyxml-devel \
-  gstreamer1-rtsp-server-devel \
-  libuv-devel \
-  nodejs \
-  eigen3-devel \
   pam-devel \
+  pandoc \
+  pcre-devel \
+  pixman-devel \
+  popt-devel \
+  protobuf-devel \
+  python-coverage \
+  python-devel \
   python-requests \
   pytz \
-  bzip2-devel \
-  flex \
-  bison \
-  llvm \
-  llvm-devel \
-  clang \
-  python-coverage \
-  libcap-ng-devel \
   qemu \
-  aalib-devel \
-  bc \
-  icu \
-  gperf \
-  gnu-efi-devel \
-  uuidd \
-  mpfr-devel \
-  mpc-devel \
-  libpciaccess-devel \
-  subunit-filters \
+  qt-devel \
+  rpm-build \
+  rpmlint \
+  sqlite-devel \
   subunit-devel \
-  libusbx-devel
+  subunit-filters \
+  systemd-devel \
+  sysvinit-tools \
+  tinyxml-devel \
+  uuidd \
+  valgrind \
+  xz-devel \
+  yasm \
+  zlib-devel
 
 RUN curl -sO https://bootstrap.pypa.io/get-pip.py \
  && sudo python get-pip.py \
