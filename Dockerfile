@@ -36,6 +36,8 @@ RUN sudo vca-install-package \
   dialog-devel \
   doxygen \
   eigen3-devel \
+  elfutils-devel \
+  elfutils-libelf-devel \
   epel-release \
   flex \
   gcc \
