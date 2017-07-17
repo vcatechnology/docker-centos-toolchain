@@ -114,7 +114,6 @@ RUN sudo vca-install-package \
   pixman-devel \
   popt-devel \
   protobuf-devel \
-  python-coverage \
   python-devel \
   python-requests \
   pytz \
@@ -139,4 +138,4 @@ RUN curl -sO https://bootstrap.pypa.io/get-pip.py \
  && sudo python get-pip.py \
  && rm get-pip.py
 
-RUN pip install --user pystache cpplint sseclient backports.functools_lru_cache
+RUN pip install --user pystache cpplint sseclient backports.functools_lru_cache coverage
