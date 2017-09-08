@@ -17,6 +17,12 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.license=MIT \
       org.label-schema.schema-version="1.0"
 
+# Install the EPEL
+RUN sudo vca-install-package epel-release
+
+# Fill in the EPEL gap (https://bugs.centos.org/view.php?id=13669)
+RUN sudo rpm -ivh https://kojipkgs.fedoraproject.org//packages/http-parser/2.7.1/3.el7/x86_64/http-parser-2.7.1-3.el7.x86_64.rpm
+
 # Install useful packages
 RUN sudo vca-install-package \
   aalib \
@@ -40,7 +46,6 @@ RUN sudo vca-install-package \
   eigen3-devel \
   elfutils-devel \
   elfutils-libelf-devel \
-  epel-release \
   flex \
   gcc \
   gcc-c++ \
