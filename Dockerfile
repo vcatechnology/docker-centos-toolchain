@@ -74,6 +74,7 @@ RUN sudo vca-install-package \
   jansson-devel \
   jasper-devel \
   js-devel \
+  keyutils-libs-devel \
   libattr-devel \
   libblkid-devel \
   libcap-devel \
